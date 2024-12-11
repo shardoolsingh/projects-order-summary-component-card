@@ -1,0 +1,109 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/****** default on body *******/
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: figtree, lato, verdana, Geneva, sans-serf;
+    background-image: url(images/pattern-background-desktop.svg);
+    padding: 1rem;
+}
+
+.main{
+    width: 95%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 1rem;
+    background-color: white;
+    color: #1b203e;
+    box-shadow: .5px 1px .8px .8px gray;
+}
+
+p{
+    color: #59607b;
+}
+
+.card .hero-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-info{
+    padding: 1rem 2.5rem;
+    text-align: center;
+}
+
+.plan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    margin-top: .6rem;
+    margin-bottom: .6rem;
+}
+
+.plan li a{
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.plan li a:hover{
+    color: hsl(224, 23%, 55%);
+}
+
+.cta-primary{
+    padding: .5rem 4rem;
+    border-radius: .5rem;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: bold;   
+}
+
+.cta-primary:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-order{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 14px;
+    color: #59607b;
+}
+
+.cancel-order:hover{
+    color: #1b203e;
+}
+
+/**** Default attribution sytle *****/
+.attribution{
+    font-size: 11px; text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+/***** media queries *****/
+/***** For smart phones *****/
+@media only screen and (max-width: 480px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+    .main{
+        min-width: 100%;
+    }
+    
+    .cta-primary{
+        padding: .4rem 2rem;
+    }
+} 
